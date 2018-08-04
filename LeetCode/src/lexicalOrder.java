@@ -3,6 +3,7 @@ import java.util.List;
 
 /**
  * leetcode 386 字典序排数
+ *
  */
 public class lexicalOrder {
 
