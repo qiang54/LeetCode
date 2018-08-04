@@ -1,7 +1,7 @@
 
 
 /**
- * 荷兰旗问题
+ * 荷兰旗问题。
  *
  */
 public class threeWayPartition {
@@ -10,7 +10,6 @@ public class threeWayPartition {
 
         int pmin = l - 1;
         int pmax = r + 1;
-
         int cur = l;
         while (cur < pmax){
             if (arr[cur] < num){
