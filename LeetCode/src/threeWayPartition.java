@@ -4,7 +4,7 @@
  * 荷兰旗问题
  *
  */
-public class ThreeWayPartition {
+public class threeWayPartition {
 
     public int[] threeWayPartition(int[] arr, int l, int r,int num){
 
@@ -33,7 +33,7 @@ public class ThreeWayPartition {
 
     public static void main(String[] args) {
         int[] arr = {2,5,4,3,6,1,0,7,8};
-        ThreeWayPartition partition = new ThreeWayPartition();
+        threeWayPartition partition = new threeWayPartition();
         int[] ints = partition.threeWayPartition(arr, 0, arr.length - 1, 4);
         for (int i : ints
              ) {
