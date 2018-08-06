@@ -59,4 +59,25 @@ public class TwoQueuesStack {
         swap();
         return res;
     }
+
+    public boolean isEmpty(){
+        if (data.size() != 0){
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        TwoQueuesStack stack = new TwoQueuesStack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        while (stack.isEmpty()){
+            System.out.println(stack.poll());
+
+        }
+    }
 }
