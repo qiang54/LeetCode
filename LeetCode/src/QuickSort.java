@@ -22,19 +22,19 @@ public class QuickSort {
         arr[j] = temp;
     }
 
-    public void QuickSort(int[] arr, int left, int right){
+    public void quickSort(int[] arr, int left, int right){
         if (left > right){
             return;
         }
         int index = Partiton(arr, left, right);
-        QuickSort(arr, left,index - 1);
-        QuickSort(arr, index + 1, right);
+        quickSort(arr, left,index - 1);
+        quickSort(arr, index + 1, right);
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{2,5,1,7,3,4,6};
         QuickSort quickSort = new QuickSort();
-        quickSort.QuickSort(arr, 0 , arr.length - 1);
+        quickSort.quickSort(arr, 0 , arr.length - 1);
 
         System.out.println(Arrays.toString(arr));
     }
