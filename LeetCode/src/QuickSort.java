@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 /**
  * 快排
@@ -36,6 +36,9 @@ public class QuickSort {
         QuickSort quickSort = new QuickSort();
         quickSort.quickSort(arr, 0 , arr.length - 1);
 
-        System.out.println(Arrays.toString(arr));
+        for (int i : arr
+             ) {
+            System.out.print(i + " ");
+        }
     }
 }
